@@ -1,0 +1,37 @@
+
+
+// db.artigos.findOneAndUpdate({
+//     slug: "visualizando-dados-de-frequencia"
+// },{
+//     $pop: {
+//         comentarios: 1
+//     }
+// })
+
+// var documento = db.artigos.update({
+//     slug: "visualizando-dados-de-frequencia"
+// },{
+//     $push: {
+//         comentarios: {
+//             $each:[
+//                 {
+//                     nome: "Giovani",
+//                     email: "giovani@alura.com.br",
+//                     texto: "gostei do artigo!",
+//                     data: ISODate('2019-09-24')
+//                 }
+//             ],
+//             $position: 0
+//         }
+//     }
+// }, {
+//     returnNewDocument: true
+// })
+
+// db.cometarios.insertOne({
+//     id_artigo: documento._id,
+//     nome: "Giovani",
+//     email: "giovani@alura.com.br",
+//     texto: "gostei do artigo!",
+//     data: ISODate('2019-09-24')
+// })

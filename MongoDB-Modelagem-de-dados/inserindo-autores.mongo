@@ -1,0 +1,8 @@
+
+
+db.autores.insertOne({
+    nome: "Gabriel ferreira",
+    descricao: "Desenvolvedor e criador de conteudos na Alura e grupo Caelum.",
+    email: "gabs@caelum.com.br",
+    senha: "gabs1234",
+})

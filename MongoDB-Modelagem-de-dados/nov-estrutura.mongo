@@ -1,0 +1,14 @@
+
+
+db.artigos.insertOne({
+    autor: {
+        nome: "Gabriel ferreira",
+        descricao: "Desenvolvedor e criador de conteudos na Alura e grupo Caelum.",
+        email: "gabs@caelum.com.br",
+        senha: "gabs1234",
+    },
+    slug: "projeto-caelum-nas-faculdades",
+    titulo: "Projeto Caelum nas Faculdades",
+    conteudo: "Por enquanto nós estamos indo apenas até faculdades de São Paulo e cidades próximas",
+    dataCriacao: '2019-06-04'
+})

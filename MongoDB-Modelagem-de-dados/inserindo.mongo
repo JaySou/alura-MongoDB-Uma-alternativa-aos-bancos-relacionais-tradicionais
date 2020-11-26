@@ -1,0 +1,55 @@
+
+// db.infoAutores.insertOne({
+//     nome: "Jailson de Souza",
+//     email: "jailson.souza@compasso.com.br",
+//     senha: "12345",
+//     descricao: "Desenvolvedor Node JS, React JS, MongoDB, Sql Server, MySql"
+// })
+
+
+// var autorInfo = db.infoAutores.findOne({
+//     email: "jailson.souza@compasso.com.br"
+// })
+
+// db.artigos.insertOne({
+//     autor: {
+//         nome: autorInfo.nome,
+//         descricao: autorInfo.descricao,
+//         id_info: autorInfo._id
+//     },
+//     slug: "dicas-politicas-de-senha",
+//     titulo: "Politica de Senha",
+//     conteudo: "Recentemente, realizei alguns testes de segurança em uma aplicação web que mantenho online.",
+//     dataCriacao: ISODate('2018-07-18'),
+//     categorias: [ 'Arquitetura', 'Programação' ],
+//     comentarios: []
+    
+// })
+
+
+
+// var documento = db.artigos.findOneAndUpdate({
+//     slug: "dicas-politicas-de-senha"
+// }, {
+//     $push: {
+//         comentarios: {
+//             $each: [
+//                 {
+//                     nome: "Giovanni",
+//                     email: "giovanni@alura.com.br",
+//                     texto: "Achei muito legal esse artigo!",
+//                     data: ISODate('2019-09-24')
+//                 }
+//             ],
+//             $position: 0
+//         }
+//     }
+// }, { returnNewDocument: true })
+
+// db.comentarios.insertOne({
+//     id_artigo: documento._id,
+//     nome: "Giovanni",
+//     email: "giovanni@alura.com.br",
+//     texto: "Achei muito legal esse artigo!",
+//     data: ISODate('2019-09-24')
+// })
